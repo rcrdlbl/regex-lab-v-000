@@ -16,5 +16,5 @@ end
 
 def valid_phone_number?(phone)
 num = phone.gsub(/\D/, '')
-return !!(num =~ /^{10}$/)
+return !!(num =~ /\d{10}/)
 end
